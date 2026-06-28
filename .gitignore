@@ -1,0 +1,45 @@
+# Python / virtualenv
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Streamlit / local runtime
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local agent/session metadata
+.agents/
+.codex/
+
+# Data files: keep code, docs and reports in git; keep heavy/local datasets out.
+data/raw/
+data/interim/
+data/processed/
+data/external/backups/
+
+# Keep curated lightweight external inputs needed by the app.
+!data/external/
+!data/external/distribuidoras_regiao.csv
+!data/external/distribuidoras_regiao_template.csv
+!data/external/geo/
+!data/external/geo/*.geojson
+
+# Presentation screenshots can be regenerated/captured manually.
+reports/**/screenshots/
