@@ -43,3 +43,8 @@ data/external/backups/
 
 # Presentation screenshots can be regenerated/captured manually.
 reports/**/screenshots/
+
+# DOCS and REPORTS
+
+docs/*
+reports/*
