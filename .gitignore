@@ -40,6 +40,7 @@ data/external/backups/
 !data/external/distribuidoras_regiao_template.csv
 !data/external/geo/
 !data/external/geo/*.geojson
+!data/processed/.gitkeep
 
 # Presentation screenshots can be regenerated/captured manually.
 reports/**/screenshots/

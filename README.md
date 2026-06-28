@@ -35,7 +35,35 @@ data/processed/
 data/external/
 ```
 
-Os dados brutos em `data/raw/` e os arquivos processados grandes não devem ser enviados ao Git.
+Por padrão, os dados grandes não entram no Git. Quem clonar o projeto precisa receber a pasta `data/processed/` por fora para rodar o app diretamente.
+
+Arquivos principais esperados em `data/processed/`:
+
+```text
+composicao_distribuidora_ano.parquet
+composicao_regiao_ano.parquet
+composicao_uf_ano_light.parquet
+consumo_mensal_classe.parquet
+consumo_regiao_classe.parquet
+consumo_uf_classe_light.parquet
+dim_distribuidora.parquet
+dim_tempo.parquet
+samp_long.parquet
+```
+
+Tamanho aproximado dos dados locais:
+
+```text
+data/processed/*.parquet   159 MB
+data/interim/*.parquet     180 MB
+data/raw/*.csv             3.6 GB
+```
+
+O maior arquivo processado é:
+
+```text
+data/processed/samp_long.parquet   155 MB
+```
 
 ## Aviso importante
 
