@@ -14,6 +14,37 @@ python -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
 
+## Baixar dados processados
+
+Os arquivos grandes não ficam no GitHub. Para o app funcionar, baixe o pacote de dados processados neste link:
+
+```text
+https://drive.google.com/file/d/1jF9U7ZPZk_x0TQvJlFh-gTwMJBvidSB_/view?usp=sharing
+```
+
+Depois extraia/copie a pasta processada para este caminho do projeto:
+
+```text
+data/processed/
+```
+
+A estrutura final deve ficar assim:
+
+```text
+data/
+├── external/
+└── processed/
+    ├── composicao_distribuidora_ano.parquet
+    ├── composicao_regiao_ano.parquet
+    ├── composicao_uf_ano_light.parquet
+    ├── consumo_mensal_classe.parquet
+    ├── consumo_regiao_classe.parquet
+    ├── consumo_uf_classe_light.parquet
+    ├── dim_distribuidora.parquet
+    ├── dim_tempo.parquet
+    └── samp_long.parquet
+```
+
 ## Rodar o app
 
 ```bash
@@ -35,7 +66,7 @@ data/processed/
 data/external/
 ```
 
-Por padrão, os dados grandes não entram no Git. Quem clonar o projeto precisa receber a pasta `data/processed/` por fora para rodar o app diretamente.
+Por padrão, os dados grandes não entram no Git. Quem clonar o projeto precisa baixar a pasta `data/processed/` pelo link citado acima para rodar o app diretamente.
 
 Arquivos principais esperados em `data/processed/`:
 
